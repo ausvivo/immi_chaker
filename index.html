@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Australia Visa Entitlement Verification</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://saivasystem.com/storage/blog/Information%20Technology_1635239766.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+        
+        header {
+            background: #1a4480;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 5px solid #e31b23;
+        }
+        
+        .govt-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .govt-logo {
+            width: 60px;
+            height: 60px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: #1a4480;
+            font-size: 12px;
+            text-align: center;
+            padding: 5px;
+        }
+        
+        .govt-text h1 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        
+        .govt-text p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .main-content {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        
+        .form-section {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-section h2 {
+            color: #1a4480;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #1a4480;
+        }
+        
+        .input-group {
+            margin-bottom: 20px;
+        }
+        
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #444;
+        }
+        
+        .input-group input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        .input-group input:focus {
+            outline: none;
+            border-color: #1a4480;
+            box-shadow: 0 0 0 2px rgba(26, 68, 128, 0.2);
+        }
+        
+        .example {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        button {
+            background: #1a4480;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        button:hover {
+            background: #0d3266;
+        }
+        
+        .result-section {
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .result-section h2 {
+            color: #1a4480;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #1a4480;
+        }
+        
+        .visa-detail {
+            margin-bottom: 15px;
+            display: flex;
+        }
+        
+        .visa-detail .label {
+            font-weight: 600;
+            min-width: 200px;
+            color: #555;
+        }
+        
+        .visa-summary {
+            background: #e8f1ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 25px;
+        }
+        
+        .visa-summary h3 {
+            color: #1a4480;
+            margin-bottom: 15px;
+        }
+        
+        .disclaimer {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1a4480;
+            color: white;
+            font-size: 14px;
+            border-top: 5px solid #e31b23;
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="govt-header">
+                <div class="govt-logo">AUSTRALIAN GOVERNMENT</div>
+                <div class="govt-text">
+                    <h1>Australia Visa Entitlement Verification</h1>
+                    <p>Department of Home Affairs</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="form-section">
+                <h2>Check Your Visa Details</h2>
+                <div class="input-group">
+                    <label for="passport">Passport Number</label>
+                    <input type="text" id="passport" placeholder="e.g. A1234567, AB123456">
+                    <div class="example">Example: A1234567, AB123456, A12345678</div>
+                </div>
+                <div class="input-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="text" id="dob" placeholder="DD/MM/YYYY">
+                    <div class="example">Example: 15/05/1985, 03/12/1990, 28/02/1978</div>
+                </div>
+                <div class="input-group">
+                    <label for="grant">Visa Grant Number</label>
+                    <input type="text" id="grant" placeholder="e.g. 1234567890123">
+                    <div class="example">Example: 1234567890123, 9876543210987</div>
+                </div>
+                <button onclick="checkVisa()">Check Visa Details</button>
+                
+                <div class="disclaimer">
+                    <strong>Note:</strong> If you don't get it, try again later. Sometimes our server is down. We sincerely apologize for this.
+Do not search more than 3 times at a time, as this may result in your server ID being blocked.
+                </div>
+            </div>
+
+            <div class="result-section">
+                <h2>Visa Details</h2>
+                <div id="visaResult">
+                    <p>Please fill out the form on the left and click "Check Visa Details" to view your visa information.</p>
+                </div>
+                
+                <div id="detailedResult" style="display: none;">
+                    <!-- Visa details will be displayed here -->
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2023 Commonwealth of Australia.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Visa database with 6 entries
+        const visaDatabase = [
+            {
+                passport: "A1234567",
+                grant: "1234567890123",
+                dob: "15/05/1985",
+                type: "Skilled - Nominated (subclass 190)",
+                stream: "Medium Term",
+                grantDate: "15 April 2024",
+                mustNotArriveAfter: "02 June 2025",
+                lengthOfStay: "15 April 2029",
+                travel: "Multiple entries",
+                name: "M A Halim Rahi",
+                dateOfBirth: "15 May 1985",
+                visaGrantNumber: "1234567890123",
+                passportNumber: "A1234567",
+                passportCountry: "BANGLADESH",
+                applicationId: "9184057797",
+                transactionRef: "EGZOMG13TQ",
+                sponsor: "JMD Railtech Pty Ltd",
+                sponsorRegDate: "26 February 1988",
+                occupation: "Customer Service Executive - 149295",
+                postcode: "2000",
+                remuneration: "$70,000",
+                salary: "$70,000",
+                hoursPerWeek: "40"
+            },
+            {
+                passport: "AB123456",
+                grant: "9876543210987",
+                dob: "03/12/1990",
+                type: "Skilled - Nominated (subclass 190)",
+                stream: "Medium Term",
+                grantDate: "15 September 2025",
+                mustNotArriveAfter: "15 April 2029",
+                lengthOfStay: "15 April 2029",
+                travel: "Multiple entries",
+                name: "MD POLASH Mia",
+                dateOfBirth: "03 December 1990",
+                visaGrantNumber: "9876543210987",
+                passportNumber: "AB123456",
+                passportCountry: "BANGLADESH",
+                applicationId: "9184055547",
+                transactionRef: "EGZOMG13TQ",
+                sponsor: "JMD Railtech Pty Ltd",
+                sponsorRegDate: "26 February 1988",
+                occupation: "Customer Service Executive - 149295",
+                postcode: "2000",
+                remuneration: "$70,000",
+                salary: "$70,000",
+                hoursPerWeek: "40"
+            },
+            {
+                passport: "A12345678",
+                grant: "4567890123456",
+                dob: "28/02/1978",
+                type: "Skilled - Nominated (subclass 190)",
+                stream: "Medium Term",
+                grantDate: "15 September 2025",
+                mustNotArriveAfter: "15 April 2029",
+                lengthOfStay: "15 April 2029",
+                travel: "Multiple entries",
+                name: "MD ASHIKUR Rahman",
+                dateOfBirth: "28 February 1978",
+                visaGrantNumber: "4567890123456",
+                passportNumber: "A12345678",
+                passportCountry: "BANGLADESH",
+                applicationId: "9184055566",
+                transactionRef: "YHFBVC541F",
+                sponsor: "JMD Railtech Pty Ltd",
+                sponsorRegDate: "26 February 1988",
+                occupation: "Customer Service Executive - 149295",
+                postcode: "2000",
+                remuneration: "$70,000",
+                salary: "$70,000",
+                hoursPerWeek: "40"
+            },
+            {
+                passport: "B9876543",
+                grant: "7890123456789",
+                dob: "15/08/1990",
+                type: "Student Visa (subclass 500)",
+                stream: "Higher Education",
+                grantDate: "10 March 2023",
+                mustNotArriveAfter: "01 July 2023",
+                lengthOfStay: "15 March 2026",
+                travel: "Multiple entries",
+                name: "RAHMAN Md Ali",
+                dateOfBirth: "15 August 1990",
+                visaGrantNumber: "7890123456789",
+                passportNumber: "B9876543",
+                passportCountry: "BANGLADESH",
+                applicationId: "8765432109",
+                transactionRef: "ABCDEFG1234",
+                sponsor: "University of Sydney",
+                sponsorRegDate: "01 January 1850",
+                occupation: "Student",
+                postcode: "2006",
+                remuneration: "$25,000",
+                salary: "$25,000",
+                hoursPerWeek: "20"
+            },
+            {
+                passport: "C1234567",
+                grant: "2345678901234",
+                dob: "30/11/1985",
+                type: "Skilled Independent (subclass 189)",
+                stream: "Long Term",
+                grantDate: "05 January 2024",
+                mustNotArriveAfter: "30 June 2024",
+                lengthOfStay: "05 January 2029",
+                travel: "Multiple entries",
+                name: "KHAN Ahmed",
+                dateOfBirth: "30 November 1985",
+                visaGrantNumber: "2345678901234",
+                passportNumber: "C1234567",
+                passportCountry: "BANGLADESH",
+                applicationId: "7654321098",
+                transactionRef: "ZYXWVU9876",
+                sponsor: "N/A",
+                sponsorRegDate: "N/A",
+                occupation: "Software Engineer - 261313",
+                postcode: "3000",
+                remuneration: "$95,000",
+                salary: "$95,000",
+                hoursPerWeek: "40"
+            },
+            {
+                passport: "D1234567",
+                grant: "3456789012345",
+                dob: "12/04/1992",
+                type: "Partner Visa (subclass 820)",
+                stream: "Temporary",
+                grantDate: "20 October 2023",
+                mustNotArriveAfter: "N/A",
+                lengthOfStay: "20 October 2025",
+                travel: "Multiple entries",
+                name: "AKTER Fatima",
+                dateOfBirth: "12 April 1992",
+                visaGrantNumber: "3456789012345",
+                passportNumber: "D1234567",
+                passportCountry: "BANGLADESH",
+                applicationId: "5566778899",
+                transactionRef: "MNBVCXZ5678",
+                sponsor: "John Smith",
+                sponsorRegDate: "N/A",
+                occupation: "N/A",
+                postcode: "3000",
+                remuneration: "N/A",
+                salary: "N/A",
+                hoursPerWeek: "N/A"
+            }
+        ];
+
+        function checkVisa() {
+            const passportNum = document.getElementById('passport').value;
+            const grantNum = document.getElementById('grant').value;
+            const dob = document.getElementById('dob').value;
+            
+            // Search for visa in database
+            const foundVisa = visaDatabase.find(visa => 
+                visa.passport.toUpperCase() === passportNum.toUpperCase() && 
+                visa.grant === grantNum && 
+                visa.dob === dob
+            );
+            
+            if (foundVisa) {
+                document.getElementById('visaResult').innerHTML = '<p style="color: green; font-weight: bold;">Visa details found!</p>';
+                
+                // Display visa details
+                const detailedResult = document.getElementById('detailedResult');
+                detailedResult.style.display = 'block';
+                
+                detailedResult.innerHTML = `
+                    <div class="visa-detail">
+                        <div class="label">Visa Type:</div>
+                        <div class="value">${foundVisa.type}</div>
+                    </div>
+                    <div class="visa-detail">
+                        <div class="label">Stream:</div>
+                        <div class="value">${foundVisa.stream}</div>
+                    </div>
+                    <div class="visa-detail">
+                        <div class="label">Date of Grant:</div>
+                        <div class="value">${foundVisa.grantDate}</div>
+                    </div>
+                    <div class="visa-detail">
+                        <div class="label">Must Not Arrive After:</div>
+                        <div class="value">${foundVisa.mustNotArriveAfter}</div>
+                    </div>
+                    <div class="visa-detail">
+                        <div class="label">Length of Stay:</div>
+                        <div class="value">${foundVisa.lengthOfStay}</div>
+                    </div>
+                    <div class="visa-detail">
+                        <div class="label">Travel:</div>
+                        <div class="value">${foundVisa.travel}</div>
+                    </div>
+                    
+                    <div class="visa-summary">
+                        <h3>Visa Summary</h3>
+                        <div class="visa-detail">
+                            <div class="label">Name:</div>
+                            <div class="value">${foundVisa.name}</div>
+                        </div>
+                        <div class="visa-detail">
+                            <div class="label">Date of Birth:</div>
+                            <div class="value">${foundVisa.dateOfBirth}</div>
+                        </div>
+                        <div class="visa-detail">
+                            <div class="label">Visa Grant Number:</div>
+                            <div class="value">${foundVisa.visaGrantNumber}</div>
+                        </div>
+                        <div class="visa-detail">
+                            <div class="label">Passport Number:</div>
+                            <div class="value">${foundVisa.passportNumber}</div>
+                        </div>
+                        <div class="visa-detail">
+                            <div class="label">Passport Country:</div>
+                            <div class="value">${foundVisa.passportCountry}</div>
+                        </div>
+                        <div class="visa-detail">
+                            <div class="label">Application ID:</div>
+                            <div class="value">${foundVisa.applicationId}</div>
+                        </div>
+                        <div class="visa-detail">
+                            <div class="label">Transaction Reference:</div>
+                            <div class="value">${foundVisa.transactionRef}</div>
+                        </div>
+                        <div class="visa-detail">
+                            <div class="label">Sponsor:</div>
+                            <div class="value">${foundVisa.sponsor}</div>
+                        </div>
+                        <div class="visa-detail">
+                            <div class="label">Sponsor Registration Date:</div>
+                            <div class="value">${foundVisa.sponsorRegDate}</div>
+                        </div>
+                    </div>
+                    
+                    <div class="visa-summary">
+                        <h3>Position Details</h3>
+                        <div class="visa-detail">
+                            <div class="label">Nominated Occupation:</div>
+                            <div class="value">${foundVisa.occupation}</div>
+                        </div>
+                        <div class="visa-detail">
+                            <div class="label">Postcode of Employment:</div>
+                            <div class="value">${foundVisa.postcode}</div>
+                        </div>
+                        <div class="visa-detail">
+                            <div class="label">Total Remuneration:</div>
+                            <div class="value">${foundVisa.remuneration}</div>
+                        </div>
+                        <div class="visa-detail">
+                            <div class="label">Salary (Monetary Component):</div>
+                            <div class="value">${foundVisa.salary}</div>
+                        </div>
+                        <div class="visa-detail">
+                            <div class="label">Hours Per Week:</div>
+                            <div class="value">${foundVisa.hoursPerWeek}</div>
+                        </div>
+                    </div>
+                `;
+            } else {
+                document.getElementById('visaResult').innerHTML = '<p style="color: red;">Sorry, no visa found matching the provided details. Please check your information and try again.</p>';
+                document.getElementById('detailedResult').style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
